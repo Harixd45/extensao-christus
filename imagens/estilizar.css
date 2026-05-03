@@ -1,0 +1,61 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#logo{
+    width: 8%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+#video{
+    display: block;
+    margin: 20px auto;
+    width: 70%;
+    height: 700px;
+}
+#imagem-recanto{
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    height: auto;
+}
+iframe{
+    display: block;
+    margin: 20px auto;
+    width: 45%;
+    height: 450px;
+}
+h2, p, h3{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+form{
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+}
+
+button{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div{
+    text-align: center;
+    padding: 5px;
+}

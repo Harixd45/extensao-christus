@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="estilizar.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recanto do Sagrado Coração (RSC)</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <img id="logo" src="logo-RSC.jpg" alt="Logo do Recanto do Sagrado Coração" />
+      <h1>Recanto do Sagrado Coração (RSC)</h1>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#destaques">Destaques</a></li>
+        <li><a href="#doacoes">Doações</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+      </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+      <!-- Seção sobre -->
+      <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/9UlmLyq1ZKQ?si=eCDE4XtpagSZnaCv"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!-- Seção destaques -->
+      <section id="destaques">
+        <h2>Sobre o Recanto</h2>
+
+        <img id="imagem-recanto" src="recanto-img.jpg" alt="Imagem do Recanto do Sagrado Coração">
+        
+
+        <h3>Um espaço de acolhimento, cuidado e transformação social</h3>
+
+        <p>
+          O Recanto Sagrado Coração é uma associação sem fins lucrativos
+          localizada em Fortaleza, dedicada à assistência social de pessoas em
+          situação de vulnerabilidade. A instituição atua como um lar de longa
+          permanência para idosas, oferecendo acolhimento, cuidado diário e um
+          ambiente digno para quem precisa de proteção e atenção contínua. Além
+          disso, desenvolve ações solidárias voltadas à população em situação de
+          rua, como distribuição de alimentos e apoio básico à sobrevivência.
+        </p>
+
+        <p>
+          Com uma trajetória marcada pelo compromisso com o bem-estar social, o
+          Recanto também se envolve em iniciativas de recuperação e apoio
+          terapêutico, contribuindo para a reintegração de pessoas em contextos
+          de fragilidade. Seu trabalho é sustentado por valores como
+          solidariedade, respeito e dignidade humana, buscando não apenas
+          atender necessidades imediatas, mas também promover transformação e
+          esperança na vida dos assistidos.
+          :contentReference[oaicite:0]{index=0}
+        </p>
+      </section>
+
+      <!-- Seção doações -->
+      <section id="doacoes">
+        <h2>Doações</h2>
+
+        <form action="https://www.w3schools.com/action_page.php">
+            <div>
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="José Antonio da Silva"/>
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@gmail.com"/>
+            </div>
+
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000"/>
+            </div>
+
+            <div>
+                <label for="categoria">Selecione a categoria de doação</label>
+                <select name="categoria" id="categoria">
+                    <option value="alimentos">Alimentos</option>
+                    <option value="roupas">Roupas</option>
+                    <option value="higiene">Materiais de Higiene</option>
+                    <option value="bem-estar">Produtos para o Bem-Estar</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="entrega">Data de entrega</label>
+                <input type="date" id="entrega" name="entrega" required/>
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem sobre sua contribuição</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" id="voluntario" name="voluntario" value="sim">
+                <label for="voluntario">Desejo ser voluntário</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <!-- Localização -->
+      <section id="localizacao">
+        <h2>Localização</h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.309207046717!2d-38.54376522425965!3d-3.742660543246456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74911c0fe8277%3A0x161254b24e120b3d!2sAv.%20da%20Universidade%2C%203106%20-%20Damas%2C%20Fortaleza%20-%20CE%2C%2060020-181!5e0!3m2!1spt-BR!2sbr!4v1777841386605!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <p>O Recanto Sagrado Coração está localizado em Fortaleza, na Av. da Universidade 3106 - Damas.</p>
+      </section>
+
+      <footer>
+        <p>&copy; 2024 Recanto do Sagrado Coração. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Harixd45 | Nick de vcs | Nick de vcs</p>
+        <a href="#">Voltar ao topo</a>
+      </footer>
+
+
+    </main>
+  </body>
+</html>
