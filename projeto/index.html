@@ -10,7 +10,7 @@
   <body>
     <!-- Cabeçalho -->
     <header>
-      <img id="logo" src="imagens/logo-RSC.jpg" alt="Logo do Recanto do Sagrado Coração" />
+      <img id="logo" src="imagens/Gemini_Generated_Image_whjbwwhjbwwhjbww.png" alt="Logo do Recanto do Sagrado Coração" />
       <h1>Recanto do Sagrado Coração (RSC)</h1>
     </header>
 
@@ -50,8 +50,7 @@
 
       <!-- Seção destaques -->
       <section id="destaques">
-        <h2>Sobre o Recanto</h2>
-
+        
         <img id="imagem-recanto" src="imagens/recanto-img.jpg" alt="Imagem do Recanto do Sagrado Coração">
         
 
@@ -84,46 +83,45 @@
         <h2>Doações</h2>
 
         <form action="https://www.w3schools.com/action_page.php">
-            <div>
-                <label for="nome">Nome completo</label>
-                <input type="text" id="nome" name="nome" placeholder="José Antonio da Silva"/>
-            </div>
-
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="seuemail@gmail.com"/>
-            </div>
-
-            <div>
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000"/>
-            </div>
-
-            <div>
-                <label for="categoria">Selecione a categoria de doação</label>
-                <select name="categoria" id="categoria">
-                    <option value="alimentos">Alimentos</option>
-                    <option value="roupas">Roupas</option>
-                    <option value="higiene">Materiais de Higiene</option>
-                    <option value="bem-estar">Produtos para o Bem-Estar</option>
-                    <option value="outros">Outros</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="entrega">Data de entrega</label>
-                <input type="date" id="entrega" name="entrega" required/>
-            </div>
-
-            <div>
-                <label for="mensagem">Mensagem sobre sua contribuição</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
-            </div>
-
-            <div>
-                <input type="checkbox" id="voluntario" name="voluntario" value="sim">
-                <label for="voluntario">Desejo ser voluntário</label>
-            </div>
+            <fieldset>
+              <legend>Formulário de Doação</legend>
+              <div class="maior">
+                <div class="menor">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="José Antonio da Silva"/>
+                </div>
+                <div class="menor">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@gmail.com"/>
+                </div>
+                <div class="menor">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000"/>
+                </div>
+                <div class="menor">
+                    <label for="categoria">Selecione a categoria de doação</label>
+                    <select name="categoria" id="categoria">
+                        <option value="alimentos">Alimentos</option>
+                        <option value="roupas">Roupas</option>
+                        <option value="higiene">Materiais de Higiene</option>
+                        <option value="bem-estar">Produtos para o Bem-Estar</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                <div class="menor">
+                    <label for="entrega">Data de entrega</label>
+                    <input type="date" id="entrega" name="entrega" required/>
+                </div>
+                <div class="menor">
+                    <label for="mensagem">Mensagem sobre sua contribuição</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+                <div class="menor">
+                    <input type="checkbox" id="voluntario" name="voluntario" value="sim">
+                    <label for="voluntario">Desejo ser voluntário</label>
+                </div>
+              </div>
+            </fieldset>
             <button type="submit">Enviar</button>
         </form>
       </section>
@@ -138,7 +136,7 @@
       </section>
 
       <footer>
-        <p>&copy; 2024 Recanto do Sagrado Coração. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Recanto do Sagrado Coração. Todos os direitos reservados.</p>
         <p>Desenvolvido por Harixd45 | Nick de vcs | Nick de vcs</p>
         <a href="#">Voltar ao topo</a>
       </footer>
