@@ -78,24 +78,41 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;          /* não quebra linha */
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    gap: 6px;
+    overflow-x: auto;           /* permite rolar se faltar espaço */
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
 }
 
+
 nav li {
-    padding: 18px 25px;
+    padding: 10px 8px;
 }
 
 nav a {
+    display: inline-block;
     color: #fdf8f3;
     font-size: 1.05rem;
     letter-spacing: 0.5px;
+    padding: 10px 22px;
+    background-color: rgba(253, 248, 243, 0.08);
+    border: 1px solid rgba(253, 248, 243, 0.25);
+    border-radius: 999px;
+    transition: background-color 0.3s ease, color 0.3s ease,
+                transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 nav a:hover {
-    color: #f3d9a4; /* dourado claro */
+    color: #6b3e2e;
+    background-color: #f3d9a4;
+    border-color: #f3d9a4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 /* ===== Seções ===== */
 section {
@@ -274,11 +291,20 @@ footer a:hover {
 /* ===== Responsivo ===== */
 @media (max-width: 768px) {
     h1 { font-size: 1.6rem; }
-    nav li { padding: 12px 15px; }
+
+    nav ul { gap: 4px; padding: 6px 4px; }
+    nav li { padding: 4px 2px; flex: 0 0 auto; }
+    nav a {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+        letter-spacing: 0.2px;
+    }
+
     #video, #localizacao iframe { width: 95%; height: 280px; }
     #imagem-recanto { width: 85%; }
     .menor { flex: 1 1 100%; }
 }
+
 
 .linha-decorativa {
     border: none;
@@ -292,3 +318,23 @@ footer a:hover {
         transparent 100%
     );
 }
+
+.endereco-destaque {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    max-width: 700px;
+    margin: 1.5rem auto;
+    padding: 1.25rem 1.75rem;
+    color: #5a3a24;
+    background: rgba(139, 94, 60, 0.08);
+    border-left: 4px solid rgba(139, 94, 60, 0.7);
+    border-radius: 6px;
+    line-height: 1.6;
+}
+
+.endereco-destaque strong {
+    color: #8b5e3c;
+    font-weight: 700;
+}
+
