@@ -280,3 +280,15 @@ footer a:hover {
     .menor { flex: 1 1 100%; }
 }
 
+.linha-decorativa {
+    border: none;
+    height: 3px;
+    width: 25%;
+    margin: 0.5rem auto 2rem;
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(139, 94, 60, 0.6) 50%,
+        transparent 100%
+    );
+}
