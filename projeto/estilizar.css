@@ -1,125 +1,282 @@
-html{
+/* ===== Reset e base ===== */
+* {
+    box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #4883f0;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #fdf8f3; /* creme bem suave */
+    color: #4a3b2a;            /* marrom quente */
+    line-height: 1.6;
 }
 
-header{
-    background-color: #021d38;
-    padding: 20px 0;
+h1, h2, h3, p {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #6b3e2e; /* terracota escuro */
 }
 
-nav{
-    background-color: #011427;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 35px;
-}
-ul{
-    list-style: none;
-    padding: 2;
-    margin: 0;
-}
-li{
-    display: inline;
-    padding: 25px;
-    
+h1 {
+    font-size: 2.2rem;
+    margin: 15px 0 0;
+    color: #fdf8f3;
 }
 
-#logo{
-    width: 8%;
-    height: auto;
+h2 {
+    font-size: 2rem;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #c97b5a; /* terracota */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8a4b32;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+    background-color: #6b3e2e; /* marrom terracota */
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
     display: block;
     margin: 0 auto;
-    border-radius: 100%;
+    border-radius: 50%;
+    border: 4px solid #fdf8f3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-#video{
+/* ===== Navegação ===== */
+nav {
+    background-color: #8a4b32; /* terracota médio */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav li {
+    padding: 18px 25px;
+}
+
+nav a {
+    color: #fdf8f3;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover {
+    color: #f3d9a4; /* dourado claro */
+}
+
+/* ===== Seções ===== */
+section {
+    padding: 40px 20px;
+}
+
+#sobre {
+    background-color: #f5e9d8; /* bege claro */
+}
+
+#destaques {
+    background-color: #fdf8f3; /* creme */
+}
+
+#doacoes {
+    background-color: #e8d9c4; /* bege médio */
+}
+
+#localizacao {
+    background-color: #f5e9d8;
+}
+
+/* ===== Vídeo (Sobre) ===== */
+#video {
     display: block;
     margin: 20px auto;
     width: 70%;
-    height: 700px;
+    height: 625px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
-#imagem-recanto{
+
+/* ===== Imagem (Destaques) ===== */
+#imagem-recanto {
     display: block;
     margin: 20px auto;
     width: 50%;
     height: auto;
-    border-radius: 10%;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
-iframe{
+
+#destaques p {
+    max-width: 900px;
+    margin: 15px auto;
+    text-align: justify;
+    padding: 0 20px;
+    color: #4a3b2a;
+}
+
+/* ===== Formulário (Doações) ===== */
+form {
     display: block;
     margin: 20px auto;
-    width: 45%;
-    height: 450px;
-}
-h1, h2, p, h3{
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: #4883f0;
+    max-width: 800px;
 }
 
-form{
-    display: block;
-    margin: 20px auto;
-    width: 50%;
+fieldset {
+    border: 2px solid #c97b5a;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: #fdf8f3;
 }
 
-button{
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-div{
-    text-align: center;
-    padding: 5px;
-}
-
-.maior{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-    wi
-}
-.menor{
-    width: 20%;
-    flex: 1 1 45%;
-    margin: 10px;
-    padding: 2px;
-    background-color: black;
-   
-}
-fieldset{
-    border: 4px solid #4883f0;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-footer{
-    background-color: #021427;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 10px 0;
-}
-a{
-    color: #4883f0;
-    text-decoration: none;
+legend {
+    font-family: 'Georgia', serif;
+    font-size: 1.3rem;
+    color: #6b3e2e;
+    padding: 0 10px;
     font-weight: bold;
 }
-#sobre{
-    background-color: #000c18;
+
+.maior {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
 }
+
+.menor {
+    flex: 1 1 100%;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    background-color: transparent;
+    text-align: left;
+}
+
+.menor label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #6b3e2e;
+}
+
+.menor input[type="text"],
+.menor input[type="email"],
+.menor input[type="tel"],
+.menor input[type="date"],
+.menor select,
+.menor textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c9a98a;
+    border-radius: 6px;
+    background-color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #4a3b2a;
+}
+
+.menor textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.menor input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #6b3e2e;
+    color: #fdf8f3;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #8a4b32;
+    transform: translateY(-2px);
+}
+
+/* ===== Localização ===== */
+#localizacao iframe {
+    display: block;
+    margin: 20px auto;
+    width: 70%;
+    height: 450px;
+    border-radius: 12px;
+    border: 0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Rodapé ===== */
+footer {
+    background-color: #1a1a1a;
+    color: #f5e9d8;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer p {
+    color: #f5e9d8;
+    margin: 6px 0;
+}
+
+footer a {
+    color: #f3d9a4;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+    h1 { font-size: 1.6rem; }
+    nav li { padding: 12px 15px; }
+    #video, #localizacao iframe { width: 95%; height: 280px; }
+    #imagem-recanto { width: 85%; }
+    .menor { flex: 1 1 100%; }
+}
+
