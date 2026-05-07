@@ -289,6 +289,20 @@ footer a:hover {
 }
 
 /* ===== Responsivo ===== */
+.linha-decorativa {
+    border: none;
+    height: 3px;
+    width: 25%;
+    margin: 0.5rem auto 2rem;
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(139, 94, 60, 0.6) 50%,
+        transparent 100%
+    );
+}
+
+/* ===== Responsivo ===== */
 @media (max-width: 768px) {
     h1 { font-size: 1.6rem; }
 
@@ -303,20 +317,22 @@ footer a:hover {
     #video, #localizacao iframe { width: 95%; height: 280px; }
     #imagem-recanto { width: 85%; }
     .menor { flex: 1 1 100%; }
-}
 
-
-.linha-decorativa {
-    border: none;
-    height: 3px;
-    width: 25%;
-    margin: 0.5rem auto 2rem;
-    background: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(139, 94, 60, 0.6) 50%,
-        transparent 100%
-    );
+    .linha-decorativa {
+        width: 72%;
+        height: 3px;
+        margin: 0.75rem auto 2rem;
+        background: linear-gradient(
+            to right,
+            transparent 0%,
+            rgba(139, 94, 60, 0.16) 18%,
+            rgba(139, 94, 60, 0.52) 34%,
+            rgba(139, 94, 60, 0.68) 50%,
+            rgba(139, 94, 60, 0.52) 66%,
+            rgba(139, 94, 60, 0.16) 82%,
+            transparent 100%
+        );
+    }
 }
 
 .endereco-destaque {
